@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>دورة اللغة الألمانية A1 — من الصفر مع الأستاذ أكرم عروق</title>
+<meta name="description" content="دورة أونلاين متكاملة للمستوى A1 في اللغة الألمانية، 75 ساعة تعليمية بثًا مباشرًا مع الأستاذ أكرم عروق، مدرّس أول سابق في معهد جوته بفلسطين.">
+
+<meta property="og:title" content="ابدأ الألمانية من الصفر — دورة A1 أونلاين">
+<meta property="og:description" content="75 ساعة تعليمية · 30 لقاءً مباشرًا · تبدأ أوائل سبتمبر 2026 · المقاعد محدودة">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- ═══════════════════════════════════════════════════════════
+     ⚙️  الإعدادات — عدّل هذين السطرين فقط
+     ═══════════════════════════════════════════════════════════ -->
+<script>
+  const CONFIG = {
+    // ضع هنا رابط الدفع من باي بال
+    paypal:   "PAYPAL_LINK_HERE",
+    // رقم واتساب بصيغة دولية بدون + وبدون مسافات، مثال: 4915123456789
+    whatsapp: "WHATSAPP_NUMBER_HERE",
+    // نموذج التسجيل
+    form:     "https://docs.google.com/forms/d/e/1FAIpQLSczTkOxCRRaCqPHaeeReuzd2s-uZYEJShQM7t4seJuQgyugAw/viewform"
+  };
+</script>
+
+<style>
+:root{
+  --ink:#101318;
+  --ink-soft:#3A414D;
+  --paper:#FBFAF7;
+  --line:#DEDCD5;
+  --blue:#1B3FD8;
+  --blue-deep:#0F2280;
+  --yellow:#F7C21B;
+  --red:#E0392B;
+  --display:"Readex Pro","IBM Plex Sans Arabic",system-ui,sans-serif;
+  --body:"IBM Plex Sans Arabic",system-ui,sans-serif;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--body);
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.75;
+  font-size:17px;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+
+.wrap{width:min(1080px,90vw);margin-inline:auto}
+
+/* ─── دوائر النقطتين: موتيف الأومﻻوت ─── */
+.dots{display:inline-flex;gap:5px;vertical-align:middle;margin-left:12px}
+.dots i{width:8px;height:8px;border-radius:50%;background:var(--blue);display:block}
+.dots.y i{background:var(--yellow)}
+.dots.w i{background:#fff}
+
+/* ─── الهيرو ─── */
+.hero{
+  background:var(--ink);
+  color:#fff;
+  padding:34px 0 0;
+  position:relative;
+  overflow:hidden;
+}
+.topbar{
+  display:flex;justify-content:space-between;align-items:center;
+  font-size:13px;letter-spacing:.02em;color:#9AA2B1;
+  padding-bottom:48px;
+}
+.topbar strong{color:#fff;font-weight:500}
+.badge{
+  border:1px solid #333A47;padding:5px 12px;border-radius:100px;
+  font-size:12px;color:#fff;
+}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center;padding-bottom:64px}
+.eyebrow{
+  font-family:var(--display);font-size:13px;font-weight:500;
+  letter-spacing:.14em;color:var(--yellow);margin-bottom:22px;
+}
+h1{
+  font-family:var(--display);
+  font-size:clamp(38px,5.6vw,68px);
+  font-weight:700;line-height:1.16;letter-spacing:-.015em;
+  margin-bottom:20px;
+}
+h1 em{font-style:normal;color:var(--yellow)}
+.lede{font-size:clamp(16px,2vw,19px);color:#C3C9D4;max-width:46ch;font-weight:300}
+.lede b{color:#fff;font-weight:500}
+
+/* جدار الحروف — العنصر المميز */
+.glyphs{
+  display:grid;grid-template-columns:1fr 1fr;
+  border:1px solid #262C38;
+}
+.glyphs div{
+  aspect-ratio:1;display:grid;place-items:center;
+  font-family:var(--display);font-weight:600;
+  font-size:clamp(52px,8vw,96px);line-height:1;
+  border:1px solid #262C38;
+  transition:background .35s ease,color .35s ease;
+}
+.glyphs div:nth-child(1){color:var(--yellow)}
+.glyphs div:nth-child(2){color:#fff}
+.glyphs div:nth-child(3){color:#fff}
+.glyphs div:nth-child(4){color:var(--blue);background:#fff}
+.glyphs div:hover{background:var(--blue);color:#fff}
+.glyph-note{
+  grid-column:1/-1;text-align:center;padding:14px;
+  font-size:12.5px;color:#8C94A3;border:1px solid #262C38;
+}
+
+/* ─── شريط الأرقام ─── */
+.facts{background:var(--blue);color:#fff}
+.facts .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.fact{padding:30px 22px;border-left:1px solid rgba(255,255,255,.18)}
+.fact:last-child{border-left:none}
+.fact b{
+  display:block;font-family:var(--display);font-size:clamp(26px,3.6vw,38px);
+  font-weight:700;line-height:1.1;margin-bottom:4px;
+}
+.fact span{font-size:13.5px;color:#CBD4FF}
+
+/* ─── الأقسام ─── */
+section{padding:clamp(56px,8vw,96px) 0}
+.label{
+  font-family:var(--display);font-size:12.5px;font-weight:500;
+  letter-spacing:.16em;color:var(--blue);margin-bottom:14px;
+}
+h2{
+  font-family:var(--display);font-size:clamp(27px,3.8vw,40px);
+  font-weight:600;line-height:1.25;letter-spacing:-.01em;margin-bottom:34px;
+}
+h3{font-family:var(--display);font-size:19px;font-weight:600;margin-bottom:8px}
+
+/* تفاصيل */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.rows{border-top:1px solid var(--line)}
+.row{
+  display:flex;justify-content:space-between;gap:20px;
+  padding:15px 2px;border-bottom:1px solid var(--line);
+  font-size:16px;
+}
+.row span{color:var(--ink-soft);font-size:15px}
+.row b{font-weight:600;text-align:left}
+.row.hi b{color:var(--blue);font-size:19px;font-family:var(--display)}
+
+/* ماذا ستتعلم */
+.learn{display:grid;gap:2px;background:var(--line);border:1px solid var(--line)}
+.learn li{background:var(--paper);padding:20px 22px;list-style:none;display:flex;gap:16px;align-items:flex-start}
+.learn .n{
+  font-family:var(--display);font-size:13px;font-weight:600;color:var(--blue);
+  flex:none;padding-top:4px;min-width:26px;
+}
+.learn p{font-size:15.5px;color:var(--ink-soft)}
+.learn h3{font-size:16.5px;margin-bottom:3px}
+
+/* المدرّس */
+.teacher{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.creds{list-style:none;display:grid;gap:13px;margin-top:6px}
+.creds li{display:flex;gap:13px;font-size:15.5px;color:var(--ink-soft);align-items:flex-start}
+.creds li::before{
+  content:"";width:7px;height:7px;border-radius:50%;background:var(--yellow);
+  flex:none;margin-top:11px;
+}
+.timeline{border-right:2px solid var(--blue);padding-right:22px;display:grid;gap:26px}
+.tl-item{position:relative}
+.tl-item::before{
+  content:"";position:absolute;right:-29px;top:7px;
+  width:12px;height:12px;border-radius:50%;background:var(--blue);border:3px solid #fff;
+}
+.tl-year{font-family:var(--display);font-weight:600;font-size:14px;color:var(--blue);letter-spacing:.03em}
+.tl-item p{font-size:15.5px;color:var(--ink-soft);margin-top:2px}
+
+/* الدفع */
+.cta-sec{background:var(--ink);color:#fff}
+.cta-box{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.cta-sec h2{color:#fff;margin-bottom:16px}
+.cta-sec p{color:#B8C0CE;font-weight:300}
+.price{
+  border:1px solid #2A3140;padding:30px;
+}
+.price .amt{
+  font-family:var(--display);font-size:clamp(44px,6.5vw,64px);font-weight:700;
+  line-height:1;letter-spacing:-.02em;
+}
+.price .amt small{font-size:20px;font-weight:400;color:#8C94A3}
+.price .per{font-size:14px;color:#8C94A3;margin:8px 0 24px}
+.warn{
+  display:flex;gap:10px;align-items:center;font-size:13.5px;color:var(--yellow);
+  margin-top:18px;
+}
+.warn::before{content:"";width:8px;height:8px;background:var(--yellow);border-radius:50%;flex:none}
+
+.btn{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  padding:17px 26px;font-family:var(--display);font-size:16.5px;font-weight:600;
+  text-decoration:none;border:none;cursor:pointer;width:100%;
+  transition:transform .18s ease,background .18s ease;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+.btn-pay{background:var(--yellow);color:var(--ink)}
+.btn-pay:hover{background:#FFD246}
+.btn-form{background:transparent;color:#fff;border:1px solid #39414F;margin-top:12px}
+.btn-form:hover{background:#1A1F28}
+.btn-wa{background:#25D366;color:#08240F;margin-top:12px}
+.btn-wa:hover{background:#3BE87B}
+.paynote{font-size:13px;color:#8C94A3;text-align:center;margin-top:16px;line-height:1.6}
+
+/* الأسئلة */
+.faq{display:grid;gap:0;border-top:1px solid var(--line)}
+details{border-bottom:1px solid var(--line);padding:18px 2px}
+summary{
+  font-family:var(--display);font-weight:600;font-size:17px;cursor:pointer;
+  list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center;
+}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--blue);font-size:24px;font-weight:400;line-height:1}
+details[open] summary::after{content:"–"}
+details p{margin-top:11px;color:var(--ink-soft);font-size:15.5px;max-width:65ch}
+
+/* الفوتر */
+footer{background:var(--ink);color:#7A828F;padding:34px 0;font-size:13.5px;border-top:1px solid #232935}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{color:#B8C0CE;text-decoration:none}
+footer a:hover{color:#fff}
+
+/* شريط الجوال الثابت */
+.sticky{
+  position:fixed;bottom:0;right:0;left:0;z-index:60;display:none;
+  background:var(--ink);border-top:1px solid #2A3140;padding:10px 14px;
+  gap:9px;grid-template-columns:1fr auto;align-items:center;
+}
+.sticky .p{font-family:var(--display);font-weight:600;font-size:16px;color:#fff}
+.sticky .p small{display:block;font-size:11.5px;color:#8C94A3;font-weight:400}
+.sticky .btn{width:auto;padding:13px 22px;font-size:15px}
+
+/* الحركة */
+.rise{opacity:0;transform:translateY(22px)}
+.rise.in{opacity:1;transform:none;transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.3,1)}
+
+@media (max-width:900px){
+  .hero-grid,.split,.cta-box{grid-template-columns:1fr;gap:36px}
+  .facts .wrap{grid-template-columns:1fr 1fr}
+  .fact{border-left:1px solid rgba(255,255,255,.18);border-bottom:1px solid rgba(255,255,255,.18)}
+  .fact:nth-child(2n){border-left:none}
+  .topbar{padding-bottom:34px}
+  .topbar .badge{display:none}
+  body{font-size:16px}
+  .sticky{display:grid}
+  footer{padding-bottom:88px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .rise{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══ الهيرو ═══ -->
+<header class="hero">
+  <div class="wrap">
+    <div class="topbar">
+      <div><strong>Deutsch A1</strong> · اللغة الألمانية من الصفر</div>
+      <div class="badge">تبدأ أوائل سبتمبر 2026</div>
+    </div>
+
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">دورة أونلاين · بث مباشر</div>
+        <h1>ابدأ الألمانية<br>من <em>الصفر</em>.</h1>
+        <p class="lede">
+          دورة متكاملة للمستوى A1 على مدى شهرين ونصف، بإشراف <b>الأستاذ أكرم عروق</b> —
+          خمسة عشر عامًا مدرّسًا أول في معهد جوته بفلسطين.
+        </p>
+      </div>
+
+      <div class="glyphs" aria-hidden="true">
+        <div>Ä</div><div>Ö</div><div>Ü</div><div>ß</div>
+        <div class="glyph-note">أربعة حروف لا توجد إلا في الألمانية — ستتقنها في الأسبوع الأول</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ═══ الأرقام ═══ -->
+<div class="facts">
+  <div class="wrap">
+    <div class="fact"><b>75</b><span>ساعة تعليمية</span></div>
+    <div class="fact"><b>30</b><span>لقاءً مباشرًا</span></div>
+    <div class="fact"><b>3</b><span>لقاءات أسبوعيًا</span></div>
+    <div class="fact"><b>2.5</b><span>ساعة لكل لقاء</span></div>
+  </div>
+</div>
+
+<!-- ═══ التفاصيل ═══ -->
+<section>
+  <div class="wrap split">
+    <div class="rise">
+      <div class="label">تفاصيل الدورة <span class="dots"><i></i><i></i></span></div>
+      <h2>كل ما تحتاج معرفته قبل التسجيل</h2>
+      <p style="color:var(--ink-soft);font-size:16px;max-width:44ch">
+        دورة واحدة متصلة تغطي منهج المستوى A1 كاملًا، من نطق الحرف الأول
+        حتى القدرة على إدارة محادثة يومية بالألمانية والتقدّم لامتحان معتمد.
+      </p>
+    </div>
+
+    <div class="rows rise">
+      <div class="row"><span>المستوى</span><b>A1 — مبتدئ من الصفر</b></div>
+      <div class="row"><span>الصيغة</span><b>أونلاين — بث مباشر</b></div>
+      <div class="row"><span>البداية</span><b>أوائل سبتمبر 2026</b></div>
+      <div class="row"><span>المدة</span><b>شهران ونصف</b></div>
+      <div class="row"><span>عدد اللقاءات</span><b>30 لقاءً</b></div>
+      <div class="row"><span>الأيام والمواعيد</span><b>تُعلن لاحقًا</b></div>
+      <div class="row hi"><span>الرسوم</span><b>325 $</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ماذا ستتعلم ═══ -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="label rise">مخرجات المستوى <span class="dots"><i></i><i></i></span></div>
+    <h2 class="rise">ماذا ستستطيع فعله في نهاية الدورة</h2>
+
+    <ul class="learn rise">
+      <li>
+        <span class="n">01</span>
+        <div><h3>تقرأ أي كلمة ألمانية بثقة</h3>
+        <p>نظام الأصوات والحروف كاملًا، بما فيه الأومﻻوت والحروف المركّبة — تنطق ما تراه دون تخمين.</p></div>
+      </li>
+      <li>
+        <span class="n">02</span>
+        <div><h3>تعرّف بنفسك وتفتح حوارًا</h3>
+        <p>الاسم، البلد، المهنة، العائلة، السكن، الهوايات — وأن تسأل غيرك عنها وتفهم جوابه.</p></div>
+      </li>
+      <li>
+        <span class="n">03</span>
+        <div><h3>تدير مواقف الحياة اليومية</h3>
+        <p>التسوّق والأسعار، الطعام والمطعم، الوقت والمواعيد، الاتجاهات، والمكالمة الهاتفية القصيرة.</p></div>
+      </li>
+      <li>
+        <span class="n">04</span>
+        <div><h3>تكتب وتملأ النماذج الرسمية</h3>
+        <p>رسالة قصيرة، بريد إلكتروني بسيط، واستمارات البيانات الشخصية المطلوبة في الدوائر الألمانية.</p></div>
+      </li>
+      <li>
+        <span class="n">05</span>
+        <div><h3>تتقن قواعد A1 كاملة</h3>
+        <p>أدوات التعريف der / die / das، تصريف الأفعال، حالتا Nominativ وAkkusativ، الضمائر، النفي، الأمر، والزمن الماضي.</p></div>
+      </li>
+      <li>
+        <span class="n">06</span>
+        <div><h3>تنتقل إلى A2 على أساس متين</h3>
+        <p>استعداد مباشر لمواصلة المستويات، وأرضية صلبة للتقدّم لامتحانات اللغة المعتمدة.</p></div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═══ المدرّس ═══ -->
+<section class="teacher">
+  <div class="wrap split">
+    <div class="rise">
+      <div class="label">المدرّس <span class="dots"><i></i><i></i></span></div>
+      <h2 style="margin-bottom:18px">الأستاذ أكرم عروق</h2>
+      <ul class="creds">
+        <li>دبلوم عالٍ في اللغة الألمانية</li>
+        <li>برنامج تأهيل مدرّسي اللغة الألمانية للناطقين بغيرها — معهد جوته بالتعاون مع جامعة ميونخ</li>
+        <li>دورات متخصصة في طرق ومهارات تدريس الألمانية للناطقين بغيرها</li>
+        <li>حاصل على رخصة لإجراء امتحانات اللغة الألمانية حتى مستوى B2</li>
+        <li>مترجم سابق لدى السلطة الفلسطينية</li>
+      </ul>
+    </div>
+
+    <div class="rise">
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-year">حتى 2005</div>
+          <p>مدرّس في المركز الثقافي الألماني بغزة</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">2005 — 2020</div>
+          <p>مدرّس أول في معهد جوته في فلسطين — خمسة عشر عامًا</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">اليوم</div>
+          <p>مدرّس مستقل لدى عدد من المعاهد والمراكز التعليمية</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ الدفع ═══ -->
+<section class="cta-sec" id="register">
+  <div class="wrap cta-box">
+    <div>
+      <div class="label" style="color:var(--yellow)">تثبيت الحجز <span class="dots y"><i></i><i></i></span></div>
+      <h2>المقاعد محدودة،<br>والأولوية للأسبق.</h2>
+      <p style="max-width:40ch">
+        نُبقي عدد المشاركين صغيرًا حتى يحصل كل واحد على وقت كافٍ للتحدث والتصحيح والمتابعة.
+        يُثبَّت المقعد بإتمام الدفع، ثم نتواصل معك عبر واتساب أو البريد الإلكتروني لإرسال
+        رابط اللقاءات والمواد.
+      </p>
+      <div class="warn">التسجيل يُغلق فور اكتمال العدد</div>
+    </div>
+
+    <div class="price">
+      <div class="amt">325 <small>دولارًا أمريكيًا</small></div>
+      <div class="per">للدورة كاملة — 75 ساعة تعليمية · لا رسوم إضافية</div>
+
+      <a class="btn btn-pay" id="payBtn" href="#" target="_blank" rel="noopener">
+        ادفع وثبّت مقعدك الآن
+      </a>
+      <a class="btn btn-form" id="formBtn" href="#" target="_blank" rel="noopener">
+        أو املأ نموذج التسجيل
+      </a>
+      <a class="btn btn-wa" id="waBtn" href="#" target="_blank" rel="noopener">
+        استفسر عبر واتساب
+      </a>
+
+      <p class="paynote">
+        الدفع الإلكتروني يتم عبر باي بال بشكل آمن.<br>
+        تفضّل التحويل البنكي أو طريقة أخرى؟ راسلنا على واتساب.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ الأسئلة ═══ -->
+<section>
+  <div class="wrap" style="max-width:820px">
+    <div class="label rise">أسئلة متكررة <span class="dots"><i></i><i></i></span></div>
+    <h2 class="rise">قبل أن تسجّل</h2>
+
+    <div class="faq rise">
+      <details open>
+        <summary>هل أحتاج إلى معرفة سابقة بالألمانية؟</summary>
+        <p>لا. الدورة تبدأ من الصفر تمامًا — من الحرف الأول والنطق. لا يُشترط أي خلفية سابقة.</p>
+      </details>
+      <details>
+        <summary>كيف تُعقد اللقاءات؟</summary>
+        <p>أونلاين بثًا مباشرًا مع المدرّس، ثلاثة لقاءات كل أسبوع، مدة كل لقاء ساعتان ونصف. اللقاء تفاعلي: تتحدث وتُصحَّح لك مباشرة، وليس تسجيلًا جاهزًا.</p>
+      </details>
+      <details>
+        <summary>متى تُعلن الأيام والمواعيد؟</summary>
+        <p>بعد اكتمال التسجيل بوقت كافٍ قبل البداية، ويصلك الجدول على واتساب أو بريدك الإلكتروني.</p>
+      </details>
+      <details>
+        <summary>كيف أثبّت مقعدي؟</summary>
+        <p>بإتمام الدفع. المقاعد محدودة والأولوية لمن يُكمل إجراءات الحجز أولًا؛ الاستفسار وحده لا يحجز مقعدًا.</p>
+      </details>
+      <details>
+        <summary>هل يمكنني الدفع بطريقة أخرى غير باي بال؟</summary>
+        <p>نعم. راسلنا على واتساب وسنرتّب لك طريقة دفع مناسبة.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>دورة اللغة الألمانية A1 — الأستاذ أكرم عروق</div>
+    <div><a id="waFoot" href="#" target="_blank" rel="noopener">تواصل عبر واتساب</a></div>
+  </div>
+</footer>
+
+<!-- شريط الجوال -->
+<div class="sticky">
+  <div class="p">325 $ <small>للدورة كاملة · 75 ساعة</small></div>
+  <a class="btn btn-pay" id="payBtn2" href="#" target="_blank" rel="noopener">سجّل الآن</a>
+</div>
+
+<script>
+(function(){
+  var wa = "https://wa.me/" + CONFIG.whatsapp + "?text=" +
+           encodeURIComponent("مرحبًا، أرغب بالاستفسار عن دورة اللغة الألمانية A1");
+
+  ["payBtn","payBtn2"].forEach(function(id){
+    var el = document.getElementById(id);
+    if(el) el.href = CONFIG.paypal;
+  });
+  document.getElementById("formBtn").href = CONFIG.form;
+  document.getElementById("waBtn").href   = wa;
+  document.getElementById("waFoot").href  = wa;
+
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); }
+    });
+  },{threshold:.12});
+  document.querySelectorAll(".rise").forEach(function(el){ io.observe(el); });
+})();
+</script>
+</body>
+</html>
