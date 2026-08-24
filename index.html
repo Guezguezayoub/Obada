@@ -19,7 +19,7 @@
       email: "otk.almassri@gmail.com",
       // ضع مفتاح Web3Forms هنا لتصل بيانات النموذج تلقائيا وبصمت إلى بريدك.
       // إذا بقي هذا السطر كما هو، سيفتح الموقع رسالة Gmail جاهزة في تبويب جديد كحل احتياطي يعمل دائما.
-      web3forms: "WEB3FORMS_KEY_HERE"
+      web3forms: "ff4e454d-a31d-4fee-b62d-97028b0fc174"
     };
   </script>
 
@@ -1044,27 +1044,27 @@
             <form class="reg-form" id="regForm">
               <div class="field">
                 <label for="regName">الاسم الكامل *</label>
-                <input type="text" id="regName" name="الاسم الكامل" required>
+                <input type="text" id="regName" name="Full Name" required>
               </div>
               <div class="field">
                 <label for="regEmail">البريد الإلكتروني *</label>
-                <input type="email" id="regEmail" name="البريد الإلكتروني" required>
+                <input type="email" id="regEmail" name="Email" required>
               </div>
               <div class="field">
                 <label for="regPhone">رقم الهاتف / واتساب *</label>
-                <input type="tel" id="regPhone" name="رقم الهاتف أو واتساب" required>
+                <input type="tel" id="regPhone" name="Phone / WhatsApp" required>
               </div>
               <div class="field">
                 <label for="regCountry">البلد / المدينة *</label>
-                <input type="text" id="regCountry" name="البلد أو المدينة" required>
+                <input type="text" id="regCountry" name="Country / City" required>
               </div>
               <div class="field">
                 <label for="regGoal">هدف الطالب من الدورة *</label>
-                <input type="text" id="regGoal" name="هدف الطالب من الدورة" required placeholder="مثال: دراسة في ألمانيا، عمل، لمّ شمل، بداية لغة">
+                <input type="text" id="regGoal" name="Goal" required placeholder="مثال: دراسة في ألمانيا، عمل، لمّ شمل، بداية لغة">
               </div>
               <div class="field">
                 <label for="regNotes">ملاحظات إضافية (اختياري)</label>
-                <textarea id="regNotes" name="ملاحظات"></textarea>
+                <textarea id="regNotes" name="Notes"></textarea>
               </div>
               <p class="form-note">بعد الضغط على الزر تصل بياناتك إلى إدارة الدورة، وتنتقل تلقائيا إلى صفحة الدفع خلال لحظات.</p>
               <button type="submit" class="btn btn-primary">إرسال البيانات والانتقال للدفع</button>
@@ -1182,23 +1182,22 @@
 
           var data = new FormData(regForm);
           var mailBody = [
-            "تسجيل جديد - دورة الألمانية A1",
+            "New Registration - German A1 Course",
             "",
-            "بيانات الطالب:",
-            "الاسم الكامل: " + (data.get("الاسم الكامل") || ""),
-            "البريد الإلكتروني: " + (data.get("البريد الإلكتروني") || ""),
-            "رقم الهاتف / واتساب: " + (data.get("رقم الهاتف أو واتساب") || ""),
-            "البلد / المدينة: " + (data.get("البلد أو المدينة") || ""),
-            "هدف الطالب من الدورة: " + (data.get("هدف الطالب من الدورة") || ""),
-            "ملاحظات: " + (data.get("ملاحظات") || "لا يوجد"),
+            "Student Info:",
+            "Full Name: " + (data.get("Full Name") || ""),
+            "Email: " + (data.get("Email") || ""),
+            "Phone / WhatsApp: " + (data.get("Phone / WhatsApp") || ""),
+            "Country / City: " + (data.get("Country / City") || ""),
+            "Goal: " + (data.get("Goal") || ""),
+            "Notes: " + (data.get("Notes") || "-"),
             "",
-            "الخطوة التالية:",
-            "بعد إرسال هذه البيانات يكمل الطالب الدفع عبر PayPal.",
+            "Next step: complete PayPal payment.",
             "",
-            "رابط الدفع:",
+            "Payment link:",
             paypalUrl
           ].join("\n");
-          var fallbackLink = gmailCompose("تسجيل جديد - دورة الألمانية A1", mailBody);
+          var fallbackLink = gmailCompose("New Registration - German A1 Course", mailBody);
 
           function finishRegistration(message) {
             sessionStorage.setItem("registrationInfoPrepared", "true");
@@ -1213,9 +1212,9 @@
           }
 
           data.append("access_key", CONFIG.web3forms);
-          data.append("subject", "تسجيل جديد - دورة الألمانية A1");
-          data.append("from_name", "نموذج تسجيل - دورة الألمانية A1");
-          data.append("رابط الدفع", paypalUrl);
+          data.append("subject", "New Registration - German A1 Course");
+          data.append("from_name", "A1 Course Registration Form");
+          data.append("Payment Link", paypalUrl);
 
           if (regSubmitBtn) {
             regSubmitBtn.disabled = true;
