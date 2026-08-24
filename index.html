@@ -1029,9 +1029,9 @@
         </div>
         <aside class="pay-panel rise" id="payPanel" aria-label="رسوم التسجيل">
           <div class="amount">325 <small>دولارا</small></div>
-          <p>للدورة كاملة: 75 ساعة تعليمية مباشرة، 30 لقاء، متابعة وتصحيح داخل اللقاءات.</p>
+          <p>للدورة كاملة: 75 ساعة تعليمية مباشرة، 30 لقاء.</p>
           <div class="pay-locked" id="payLocked">أرسل بيانات الطالب أولا لتنتقل تلقائيا إلى صفحة الدفع.</div>
-          <a class="btn btn-primary is-disabled" id="payBtn" href="#registerForm" rel="noopener" aria-disabled="true">الخطوة 2 — الدفع عبر PayPal</a>
+          <a class="btn btn-primary is-disabled" id="payBtn" href="#registerForm" rel="noopener" aria-disabled="true">الدفع الآن</a>
           <a class="btn btn-outline" id="emailBtn" href="#" target="_blank" rel="noopener">تفضّل طريقة دفع أخرى؟ راسلنا</a>
           <p class="text-muted" style="text-align:center;font-size:12.5px;margin:10px 0 0">أو راسلنا مباشرة على otk.almassri@gmail.com</p>
         </aside>
@@ -1040,7 +1040,7 @@
       <div class="wrap">
         <div class="regform rise open" id="registerForm">
           <div class="regform-body">
-            <div class="regform-success">الخطوة 1 — أدخل بيانات الطالب، ثم اضغط إرسال لتنتقل تلقائيا لصفحة الدفع.</div>
+            <div class="regform-success">أدخل بيانات الطالب، ثم اضغط إرسال لتنتقل تلقائيا لصفحة الدفع.</div>
             <form class="reg-form" id="regForm">
               <div class="field">
                 <label for="regName">الاسم الكامل *</label>
@@ -1157,7 +1157,7 @@
           payBtn.classList.remove("is-disabled");
           payBtn.removeAttribute("aria-disabled");
           payBtn.removeAttribute("tabindex");
-          payBtn.textContent = "الخطوة 2 — ادفع الآن عبر PayPal";
+          payBtn.textContent = "ادفع الآن";
         }
       }
 
